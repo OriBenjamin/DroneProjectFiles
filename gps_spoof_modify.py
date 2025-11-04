@@ -27,7 +27,7 @@ from rclpy.qos import QoSProfile, ReliabilityPolicy, HistoryPolicy
 
 from px4_msgs.msg import CostumeFakeGps, VehicleGlobalPosition
 
-from spoof_helpers import spoof_random_walk, spoof_circular, spoof_sine_along_heading
+from gps_spoof_modify_helper import spoof_random_walk, spoof_circular, spoof_sine_along_heading
 
 # --- helper: map mode -> spoof function with validation ---
 def get_spoof_function(mode: str):
